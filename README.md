@@ -2,9 +2,9 @@
 sport-motors
 
 # Integrantes
-andres garcia
-luis milona
-diego ponce
+andres garcia,
+luis milona,
+diego ponce,
 
 ## Descripción
 se trata sobre una pagina web, que contiene iformacion, productos y un apartado para comparar motos entre si, para asi saber que motos son buenas para hacer compra. 
@@ -27,33 +27,44 @@ se trata sobre una pagina web, que contiene iformacion, productos y un apartado 
 - **En progreso**:
   - 🔄 [Tarea en progreso] - Responsable: [andres garcia] - Commit: [creacion del login]
 - **Pendiente**:
-  - ⏳ [Tarea pendiente] - Responsable: [diego ponce]
+  - ⏳ [codigo para panina noticias] - Responsable: [diego ponce]
 - **Notas**:
   - [Descripción de problemas, soluciones o decisiones tomadas]
 
 ### Clase 2
-- **Fecha**: [DD/MM/YYYY]
+- **Fecha**: [27/08/2025]
 - **Objetivos**:
-  - [Objetivo 1]
-  - [Objetivo 2]
+  - [integrar login]
+  - [creacion del codigo para la pagina de noticias]
 - **Avances**:
-  - ✅ [Tarea completada 1] - Responsable: [Nombre] - Commit: [Hash o descripción del commit]
-  - ✅ [Tarea completada 2] - Responsable: [Nombre] - Commit: [Hash o descripción del commit]
+  - ✅ [Tarea completada 1] - Responsable: [andres garcia] - Commit: [creacion y integracion del login con firebase]
+  - ✅ [Tarea completada 2] - Responsable: [diego ponce] - Commit: [codigo e integracion de noticias de motos]
 - **En progreso**:
-  - 🔄 [Tarea en progreso] - Responsable: [Nombre] - Commit: [Hash o descripción del commit]
+  - 🔄 [Tarea en progreso] - Responsable: [luis molina] - Commit: [integracion de apis para las motos]
+- **Pendiente**:
+  - ⏳ [codigo e imagenes para los acesorios] - Responsable: [andres garcia]
+- **Notas**:
+  - [hubo un poco de problema con el codigo para el login y las paginas]
+
+### Clase 3
+- **Fecha**: [00/08/2025]
+- **Objetivos**:
+  - []
+  - []
+- **Avances**:
+  - ✅ [Tarea completada 1] - Responsable: [andres garcia] - Commit: [creacion y integracion del login con firebase]
+  - ✅ [Tarea completada 2] - Responsable: [] - Commit: [Hash o descripción del commit]
+- **En progreso**:
+  - 🔄 [Tarea en progreso] - Responsable: [luis molina] - Commit: [Hash o descripción del commit]
 - **Pendiente**:
   - ⏳ [Tarea pendiente] - Responsable: [Nombre]
 - **Notas**:
-  - [Descripción de problemas, soluciones o decisiones tomadas]
-
-### Clase [N]
-- **Fecha**: [DD/MM/YYYY]
-- [Repetir estructura anterior]
+  - []
 
 ## Contacto
 ### Información del Grupo
 - **Institución**: SENA
-- **Programa**: [Nombre del programa]
-- **Ficha**: [Número de ficha]
-- **Instructor**: [Nombre del instructor]
-- **Período**: [Año - Trimestre]
+- **Programa**: [Nanalisis y desarollo de software]
+- **Ficha**: [3144585]
+- **Instructor**: [jhon freddy valencia]
+- **Período**: [2025 - 3cer trimestre]
