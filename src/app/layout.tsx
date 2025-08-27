@@ -12,7 +12,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="p-4 bg-black text-white flex justify-between items-center">
           <h1 className="text-2xl font-bold">🏍️ Motor-Sport</h1>
           <nav className="space-x-4">
-            <a href="/" className="hover:underline">Inicio</a>
+            <a href="/" className="hover:underline">Login</a>
+            <a href="/home" className="hover:underline">Inicio</a>
             <a href="/modelos" className="hover:underline">Modelos</a>
             <a href="/accesorios" className="hover:underline">Accesorios</a>
             <a href="/noticias" className="hover:underline">Noticias</a>
