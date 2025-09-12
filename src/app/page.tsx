@@ -1,28 +1,62 @@
-export default function Home() {
+"use client";
+
+import { useEffect, useState } from "react";
+import { auth, googleProvider } from "@/firebaseConfig";
+import { signInWithPopup, signOut, onAuthStateChanged, User } from "firebase/auth";
+
+export default function Page() {
+  const [user, setUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
+
+  const handleGoogleLogin = async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+    } catch (err) {
+      console.error("Error en login:", err);
+    }
+  };
+
+  const handleLogout = async () => {
+    await signOut(auth);
+  };
+
+  if (!user) {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen gap-4">
+        <h1 className="text-2xl font-bold">Bienvenido</h1>
+        <button
+          onClick={handleGoogleLogin}
+          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+        >
+          Ingresar con Google
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-100">
-      <h1 className="text-4xl font-bold text-red-600 mb-6">Motor-Sport 🏍️</h1>
-      
-      <p className="text-lg text-gray-700 mb-4 text-center max-w-xl">
-        Bienvenido a Motor-Sport, la página dedicada al motociclismo. Aquí encontrarás información sobre modelos, accesorios, noticias y mucho más del mundo motero.
-      </p>
+    <div className="flex flex-col items-center justify-center h-screen gap-4">
+      <h1 className="text-2xl font-bold">Login</h1>
+      <img
+        src={user.photoURL ?? ""}
+        alt="Foto de perfil"
+        className="w-20 h-20 rounded-full"
+      />
+      <p className="text-lg">Hola, {user.displayName}</p>
+      <p className="text-sm text-gray-500">{user.email}</p>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 w-full max-w-4xl">
-        <div className="p-4 bg-white rounded-xl shadow-md">
-          <h2 className="text-xl font-semibold">🏍️ Modelos</h2>
-          <p className="text-gray-600">Descubre los últimos modelos de motos deportivas, touring y urbanas.</p>
-        </div>
-
-        <div className="p-4 bg-white rounded-xl shadow-md">
-          <h2 className="text-xl font-semibold">⚙️ Accesorios</h2>
-          <p className="text-gray-600">Encuentra cascos, guantes, chaquetas y todo lo que necesitas.</p>
-        </div>
-
-        <div className="p-4 bg-white rounded-xl shadow-md">
-          <h2 className="text-xl font-semibold">📰 Noticias</h2>
-          <p className="text-gray-600">Mantente al día con las últimas novedades del motociclismo.</p>
-        </div>
-      </section>
-    </main>
+      <button
+        onClick={handleLogout}
+        className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+      >
+        Cerrar sesión
+      </button>
+    </div>
   );
 }
