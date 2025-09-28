@@ -20,7 +20,7 @@ export default function ModelosPage() {
               height={250}
               className="rounded-lg"
             />
-            <h2 className="text-xl font-semibold mt-3">{moto.nombre}</h2>
+           <h2 className="text-xl font-semibold mt-3 text-gray-900">{moto.nombre}</h2>
             <p className="text-gray-600">{moto.descripcion}</p>
             <p className="text-green-600 font-bold mt-2">{moto.precio}</p>
             <Link
@@ -35,3 +35,4 @@ export default function ModelosPage() {
     </main>
   );
 }
+// falta aggregar mas modelos de las motos 

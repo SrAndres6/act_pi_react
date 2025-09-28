@@ -23,7 +23,8 @@ export default function MotoDetallePage({ params }: { params: { id: string } }) 
           height={350}
           className="rounded-lg"
         />
-        <h1 className="text-3xl font-bold mt-4">{moto.nombre}</h1>
+        <h1 className="text-3xl font-bold mt-4 text-black-900">{moto.nombre}</h1>
+
         <p className="text-gray-700 mt-2">{moto.descripcion}</p>
         <p className="text-green-600 font-bold mt-4">Precio: {moto.precio}</p>
       </div>

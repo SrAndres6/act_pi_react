@@ -1,18 +1,17 @@
-/* // next.config.js
 /** @type {import('next').NextConfig} */
-/* const nextConfig = {};
-
-module.exports = nextConfig;
- /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "cdn2.yamaha-motor.eu",
-      "content2.kawasaki.com",
-      "powersports.honda.com",
-      "www.suzuki.es",
-      "images.ctfassets.net",
-      "www.yamahamotos.cl", // 👈 aquí añadimos el nuevo dominio
+    remotePatterns: [
+      { protocol: "https", hostname: "cdn2.yamaha-motor.eu" },
+      { protocol: "https", hostname: "content2.kawasaki.com" },
+      { protocol: "https", hostname: "powersports.honda.com" },
+      { protocol: "https", hostname: "www.suzuki.es" },
+      { protocol: "https", hostname: "images.ctfassets.net" },
+      { protocol: "https", hostname: "www.yamahamotos.cl" },
+      { protocol: "https", hostname: "dhqlmcogwd1an.cloudfront.net" },
+      { protocol: "https", hostname: "www.hondamotovalencia.es" },
+      { protocol: "https", hostname: "www.mundomotero.com" },
+      { protocol: "https", hostname: "www.moto1pro.com" }, // 👈 Ducati
     ],
   },
 };
