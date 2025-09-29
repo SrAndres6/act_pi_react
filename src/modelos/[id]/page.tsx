@@ -1,5 +1,5 @@
 import React from "react";
-import { motos } from "@/data/motos";
+import { motos } from "@/app/components/MotosCard";
 import Image from "next/image";
 
 export default function MotoDetallePage({ params }: { params: { id: string } }) {

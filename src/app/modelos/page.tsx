@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motos } from "@/data/motos";
+import { motos } from "@/app/components/MotosCard";
 
 export default function ModelosPage() {
   return (
