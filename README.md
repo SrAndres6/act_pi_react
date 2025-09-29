@@ -47,19 +47,22 @@ se trata sobre una pagina web, que contiene iformacion, productos y un apartado 
   - [hubo un poco de problema con el codigo para el login y las paginas]
 
 ### Clase 3
-- **Fecha**: [00/08/2025]
+- **Fecha**: [01/08/2025]
 - **Objetivos**:
   - []
   - []
 - **Avances**:
   - ✅ [Tarea completada 1] - Responsable: [andres garcia] - Commit: [creacion y integracion del login con firebase]
-  - ✅ [Tarea completada 2] - Responsable: [] - Commit: [Hash o descripción del commit]
+
 - **En progreso**:
-  - 🔄 [Tarea en progreso] - Responsable: [luis molina] - Commit: [Hash o descripción del commit]
-- **Pendiente**:
-  - ⏳ [Tarea pendiente] - Responsable: [Nombre]
-- **Notas**:
-  - []
+  - 🔄 [Tarea en progreso] - Responsable: [luis molina] - Commit: []
+
+### Clase 4
+- **Fecha**: [24/09/2025]
+  - ✅ [Tarea completada 1] - Responsable: [luis molina] - Commit: [creacion de los apartados de modelos y la comparacion]
+  -  [Tarea completada] - Responsable: [andres garcia] - Commit: [creacion y edicion de ultimos retoques]
+-
+
 
 ## Contacto
 ### Información del Grupo
